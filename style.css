@@ -1,0 +1,102 @@
+/* Basic styles for my portfolio website */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #25243a;
+    background: white;
+}
+
+header {
+    background: #25243a;
+    color: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 { margin: 0; }
+header h2 span { color: #8c7bff; }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+nav a:hover { color: #b9b0ff; }
+
+section { padding: 55px 8%; }
+
+.home {
+    background: #f1efff;
+    text-align: center;
+    padding: 90px 8%;
+}
+
+.home h1 {
+    color: #6554d9;
+    font-size: 42px;
+    margin: 5px 0;
+}
+
+.home h3 { margin-top: 8px; }
+
+.btn {
+    display: inline-block;
+    background: #6554d9;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover { background: #4939b5; }
+.light { background: #f7f7fb; }
+
+.skills, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills div {
+    background: #e9e6ff;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.project {
+    flex: 1 1 250px;
+    padding: 20px;
+    border: 1px solid #dedbea;
+    border-radius: 8px;
+    background: white;
+}
+
+.project h3 { color: #6554d9; }
+#contact a { color: #5142c5; }
+.small { color: #777; font-size: 14px; }
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #25243a;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header { text-align: center; justify-content: center; }
+    nav { margin-top: 10px; }
+    nav a { display: inline-block; margin: 5px; }
+    section { padding: 40px 6%; }
+    .home h1 { font-size: 34px; }
+}
